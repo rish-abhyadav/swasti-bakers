@@ -6,7 +6,7 @@ function Menu() {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://swasti-bakers.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);

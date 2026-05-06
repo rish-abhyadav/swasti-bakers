@@ -8,7 +8,7 @@ if (!showCart || cart.length === 0) return null;
 
   const handleCheckout = async () => {
     try {
-      await fetch("http://localhost:5000/orders", {
+      await fetch("https://swasti-bakers.onrender.com/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

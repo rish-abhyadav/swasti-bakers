@@ -10,7 +10,7 @@ function Admin() {
 
   // Load products
   const fetchProducts = () => {
-    fetch("http://localhost:5000/products")
+    fetch("https://swasti-bakers.onrender.com")
       .then(res => res.json())
       .then(data => setProducts(data));
   };
