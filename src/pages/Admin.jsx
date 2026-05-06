@@ -21,7 +21,7 @@ function Admin() {
 
   // Add product
   const handleAdd = async () => {
-    await fetch("http://localhost:5000/products", {
+    await fetch("https://swasti-bakers.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -35,7 +35,7 @@ function Admin() {
 
   // Delete product
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:5000/products/${id}`, {
+    await fetch(`https://swasti-bakers.onrender.com/products/${id}`, {
       method: "DELETE"
     });
 
